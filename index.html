@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Guessing Game</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" name="userInput" id="userInput" required>
+
+        <button type="button" onclick="play()">Play</button>
+    </form>
+
+    <p id="attempts"></p>
+
+    <script>
+            var randomNum = Math.floor(Math.random() * 100);
+            console.log(randomNum);
+            var attemptsNum;
+            // var attemptsNum = document.getElementById("attempts");
+            var userInput = parseInt( document.getElementById("userInput").value);
+
+            attemptsNum = 10;
+
+
+
+            
+            function play() {
+                var numIsBigger = "The number is bigger :/";
+                var numIsSmaller = "The number smaller :/";
+    
+                var winMessage = "Congrats you won in";
+                var loseMessage = "You lost :/";
+    
+            // document.getElementById("attempts").innerHTML = attemptsNum;
+
+            // If the field is empty
+            if (userInput == undefined){
+                alert("Guess a number");
+            } else {
+                    if(randomNum < userInput){
+                        attemptsNum = document.getElementById("attempts").innerHTML = attemptsNum-1;
+                        alert (numIsBigger)
+                    }
+                    
+                    if(randomNum > userInput ){
+                        attemptsNum = document.getElementById("attempts").innerHTML = attemptsNum;
+                        // attemptsNum -=1 ;
+                        alert (numIsSmaller)
+                    }
+
+                    if(userInput === randomNum){
+                        alert (winMessage + " " + attemptsNum)
+                    }
+
+                    // if achieved in 2 steps
+
+                    
+                    // something that is not an Int
+            } //Else
+        }
+    </script>
+    
+</body>
+</html>
