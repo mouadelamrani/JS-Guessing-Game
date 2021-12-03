@@ -1,0 +1,78 @@
+/* Page Setup */
+html, body, *{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: rgba(241, 33, 33, 0.027); */
+    /* background-image: url('https://miro.medium.com/max/1200/1*B7d5Fr27lsH3uHvzF720IA.png'); */
+    /* background-image: url('https://raw.githubusercontent.com/mouadelamrani/JS-Guessing-Game/master/Assets/background1.png'); */
+    background-image: url('https://raw.githubusercontent.com/mouadelamrani/JS-Guessing-Game/master/Assets/background2.png');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+h2{
+    font-size: 3rem;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    background-color: rgb(62, 163, 179);
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+p, span{
+    font-size: 2rem;
+    color: white;
+}
+
+input{
+    /* width: 20rem; */
+    width: -webkit-fill-available;
+    height: 5rem;
+    border: 0;
+    border-bottom: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.171);
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    text-align: center;
+    color: white;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+button{
+    font-size: 1.7rem;
+    padding: 0 1em;
+    height: 3.5rem;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+}
+
