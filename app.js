@@ -51,6 +51,7 @@ if (isNaN(userInput)){
         }
 
         if(userInput === randomNum){
+            location.reload();
             console.log("Won == attempts is " + attemptsNum);
             if(attemptsNum >= 8){
                 // if achieved in 2 steps
