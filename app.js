@@ -64,6 +64,7 @@ if (isNaN(userInput)){
         if (attemptsNum <= 0){
             alert(loseMessage);
             location.reload();
+            
             // var randomNum = Math.floor(Math.random() * 100);
             // console.log(randomNum);
 
